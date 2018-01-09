@@ -10,7 +10,7 @@ if($waarde == 3) {
 }
 
 echo "<br>";
-echo '$waarde';
+echo 'De waard van $waarde is';
 echo "<br>";
 echo "$waarde";
 echo "<br>";
