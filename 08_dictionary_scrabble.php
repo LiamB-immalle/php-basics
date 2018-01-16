@@ -2,7 +2,6 @@
 
 // gegeven: een dictionary AKA associative array AKA key-value-datastructuur
 
-
 $scrabble = array(
     "A" => 1,
     "B" => 3,
@@ -35,10 +34,13 @@ $scrabble = array(
 // gevraagd: Zorg dat de functie show alle keys en values afdrukt. Maak gebruik van een foreach-loop. Extra: zorg dat de volgorde oplopend is naar aantal punten per letter.
 
 function show($assray) {
-
+	asort($assray);
+	foreach($assray as $x => $x_value) {
+    		echo "Letter= " . $x . ", Puntenwaarde= " . $x_value . "<br>";
+	}
 }
 
-
+show($scrabble);
 // gevraagd: Vul de functie verder aan zodat ze het totaal behaalde punten returnt. De code kan sterk vereenvoudigd (i.v.m. switch/case) door op de gepaste manier gebruik de maken van bovenstaande associatieve array.
 
 function punten($woord) {
